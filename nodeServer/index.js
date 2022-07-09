@@ -1,18 +1,6 @@
 // Node server which will handle socket io connections
-const express = require('express')
-const app = express()
-
 const io = require("socket.io")(8000)
 const users = {}
-
-
-app.use(function (req, res, next) {
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8000');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-    res.setHeader('Access-Control-Allow-Credentials', true);
-    next();
-});
 
 //io.on listens on all connections
 io.on('connection', function (socket) {
@@ -26,4 +14,9 @@ io.on('connection', function (socket) {
     socket.on('send', function (message) {
         socket.broadcast.emit('receive', { message: message, name: users[socket.id] });
     });
+    socket.on('disconnect', function(message){
+        socket.broadcast.emit('left', users[socket.id]);
+        delete users[socket.id];
+    });
 });
+

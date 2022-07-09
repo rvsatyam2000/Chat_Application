@@ -1,0 +1,22 @@
+{
+  "name": "chat_application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rvsatyam2000/Chat_Application.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rvsatyam2000/Chat_Application/issues"
+  },
+  "homepage": "https://github.com/rvsatyam2000/Chat_Application#readme",
+  "dependencies": {
+    "socket.io": "^4.5.1"
+  }
+}
