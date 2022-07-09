@@ -25,3 +25,7 @@ JavaScript's runtime environment is Node, and Node's runtime environment is the 
 ->ExpressJS is a prebuilt NodeJS framework that can help you in creating server-side web applications faster and smarter. Simplicity, minimalism, flexibility, scalability are some of its characteristics and since it is made in NodeJS itself, it inherited its performance as well.
 
 In short, ExpressJS did for NodeJS what Bootstrap did for HTML/CSS and responsive web design.
+
+What is use of following line.
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+?
