@@ -35,7 +35,7 @@ socket.on('user-joined', function(name){
 });
 
 socket.on('receive', function(data){
-    append(`${data.name}:${data.message}`, 'left');
+    append(`${data.name}: ${data.message}`, 'left');
 });
 
 socket.on('left', function(name){
