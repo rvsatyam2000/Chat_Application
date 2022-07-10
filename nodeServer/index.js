@@ -14,7 +14,7 @@ io.on('connection', function (socket) {
     socket.on('send', function (message) {
         socket.broadcast.emit('receive', { message: message, name: users[socket.id] });
     });
-    socket.on('disconnect', function(message){
+    socket.on('disconnect', function (message) {
         socket.broadcast.emit('left', users[socket.id]);
         delete users[socket.id];
     });

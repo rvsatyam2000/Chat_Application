@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/rvsatyam2000/Chat_Application#readme",
   "dependencies": {
+    "crypto-js": "^4.1.1",
     "socket.io": "^4.5.1"
   }
 }
