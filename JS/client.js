@@ -4,7 +4,7 @@ const form = document.getElementById('send-container');
 const messageInp = document.getElementById('messageInp');
 const messageContainer = document.querySelector('.container');
 
-var audio = new Audio('../sent_sound.mp3');
+var audio = new Audio('../src/sent_sound.mp3');
 
 function updateScroll() {
     messageContainer.scrollTop = messageContainer.scrollHeight;
