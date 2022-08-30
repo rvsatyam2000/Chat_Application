@@ -21,15 +21,24 @@
 <li>If someone leaves the chat, let others know.</li>
 </ul>
 
+# Important 
+<ul>
+<li> Dockerfile is added.</li>
+<li> Github ci/cd workflow added which automatically deploys this app on heroku, as soon as push to main happens. </li>
+</ul>
+
+# See App
+https://enigmatic-woodland-98672.herokuapp.com/
+
 # Process to run the app
 <ol>
-  <li> run <b>nodemon nodeserver/index.js</b>
+  <li> run <b>node index.js</b>
   <li> Install the extension 'live server' for Vs Code. Extension Id - <b>ritwickdey.liveserver </b>
   <li> After the extension gets installed navigate to index.html and open it to edit.
-  <li> Right click anywhere in the file <b>index.html</b> and from the menu that appears select <b> Open with Live server </b>
+  <li> Right click anywhere in the file <b>index.ejs</b> and from the menu that appears select <b> Open with Live server </b>
   <li> A instance of the application will appear in the browser. 
   <li> Copy the url from the address bar and open another instance in another tab or in incognito or on another browser.
-  <li> If you get cors error, need to install proper extension in firefox for enabling cors.
+  <li> <b> If you get cors error, need to install proper extension in firefox for enabling cors.</b>
 </ol>
 
 
